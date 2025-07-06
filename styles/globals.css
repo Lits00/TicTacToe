@@ -1,7 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+@font-face {
+  font-family: 'Shermlock';
+  src: url('/shermlock/Shermlock.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-custom {
+  font-family: 'Shermlock', sans-serif;
+}
+
+/* @custom-variant dark (&:is(.dark *));
 
 :root {
   --background: oklch(1 0 0);
@@ -132,4 +143,4 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-}
+} */

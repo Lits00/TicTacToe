@@ -1,8 +1,10 @@
 import React from 'react'
+import { Button } from '@/components/ui/button'
 
-const Box = () => {
+const Box = ({className, value, onClick}) => {
   return (
-    <div>Box</div>
+    <Button variant="outline" className={`w-20 h-20 text-2xl ${className}`} onClick={onClick}>
+      {value}</Button>
   )
 }
 
