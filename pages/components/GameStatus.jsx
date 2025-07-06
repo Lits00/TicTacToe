@@ -1,6 +1,6 @@
 import React from "react";
 
-const GameStatus = ({ status }) => {
+const GameStatus = ({ status = 'string' }) => {
     const winner = status.startsWith("Winner:");
 
   return <h2 className={`text-xl font-bold text-red-700 transition-all
